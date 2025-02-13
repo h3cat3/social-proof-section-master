@@ -1,0 +1,115 @@
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+@font-face {
+    font-family: 'League Spartan';
+    src: url(League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+* {
+    margin: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'League Spartan', serif;
+    font-size: 15px;
+    background: url(images/bg-pattern-top-mobile.svg) no-repeat top 0 left 0,
+        url(images/bg-pattern-bottom-mobile.svg) no-repeat bottom 0 right 0;
+}
+.card {
+    width: 80%;
+    height: 90%;
+    text-align: center;
+}
+.text h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    letter-spacing: -0.09rem;
+    color: var(--Very-Dark-Magenta);
+    width: 70%;
+}
+.text p {
+    font-size: 1.1875rem;
+    font-weight: 500;
+    line-height: 1.5625rem;
+    letter-spacing: -0.63px;
+    width: 84%;
+    color: var(--Dark-Grayish-Magenta);
+}
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   gap: 17px;
+   margin-bottom: 40px;
+}
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   gap: 16px;
+   margin-bottom: 40px;
+}
+.rating-box {
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 8px;
+    width: 100%;
+    padding: 15px 0;
+}
+.rating-box p{
+    font-size: 1.0625rem;
+    font-weight: 700;
+   color: var(--Very-Dark-Magenta);
+   margin-top: 15px;
+}
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+.review-card {
+    width: 100%;
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 8px;  
+    color: var(--White);
+    font-size: 1.0625rem;
+    text-align: left;
+    
+}
+.profile-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+   
+}
+.profile {
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    
+    font-weight: 700;
+}
+.verified {
+    font-weight: 400;
+    color: var(--Soft-Pink);
+}
+.review-text {
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: -0.3px;
+    margin: 40px;
+}

@@ -1,0 +1,60 @@
+@media (min-width: 786px) {
+    body {
+        background: url(images/bg-pattern-top-desktop.svg) no-repeat top 0 left 0,
+        url(images/bg-pattern-bottom-desktop.svg) no-repeat bottom 0 right 0;
+    }
+    .card {
+        display: grid;
+        grid-template-areas: 
+        "text rating"
+        "reviews reviews";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .text {
+        grid-area: text;
+        text-align: left;
+        align-items: flex-start;
+        gap: 26px;
+        margin-bottom: 20px;
+    }
+    .text h1 {
+        font-size: 3.5rem;  
+        line-height: 3rem;
+        letter-spacing: -2px;
+    }
+    .rating {
+        grid-area: rating;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    
+      .rating > div:nth-child(2) {
+        margin-left: 50px;
+      }
+      .rating > div:nth-child(3) {
+        margin-left: 100px;
+    }
+    .rating-box {
+       
+        padding-left: 30px;
+        width: 75%;
+    }
+    .rating-box p {
+        display: inline;
+        margin-left: 30px;
+    }
+    .reviews {
+        grid-area: reviews;
+        flex-direction: row;
+        align-items: start;
+        gap: 30px;
+    }
+    .reviews > div:nth-child(2) {
+        margin-top: 50px;
+      }
+      .reviews > div:nth-child(3) {
+        margin-top: 100px;
+    }
+    
+}
