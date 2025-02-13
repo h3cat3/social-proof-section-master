@@ -35,14 +35,14 @@ body {
     line-height: 2rem;
     letter-spacing: -0.09rem;
     color: var(--Very-Dark-Magenta);
-    width: 70%;
+    width: 80%;
 }
 .text p {
     font-size: 1.1875rem;
     font-weight: 500;
     line-height: 1.5625rem;
     letter-spacing: -0.63px;
-    width: 84%;
+    width: 90%;
     color: var(--Dark-Grayish-Magenta);
 }
 .text {
